@@ -3,8 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/guk/resources/views/log1in.php</file>
+            <file>file:/C:/xampp/htdocs/guk/routes/web.php</file>
+            <file>file:/C:/xampp/htdocs/guk/public/assets/js/app.js</file>
+            <file>file:/C:/xampp/htdocs/guk/public/css/decor.css</file>
+            <file>file:/C:/xampp/htdocs/guk/resources/views/login.php</file>
+            <file>file:/C:/xampp/htdocs/guk/resources/views/updateBio.php</file>
+            <file>file:/C:/xampp/htdocs/guk/resources/views/welcome.blade.php</file>
             <file>file:/C:/xampp/htdocs/guk/app/User.php</file>
+            <file>file:/C:/xampp/htdocs/guk/resources/views/dashboardView.php</file>
+            <file>file:/C:/xampp/htdocs/guk/resources/views/signUp.php</file>
         </group>
     </open-files>
 </project-private>

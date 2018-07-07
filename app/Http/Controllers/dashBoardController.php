@@ -1,6 +1,5 @@
 <?php namespace App\Http\Controllers;
 
-use App\Http\Request;
 use App\Http\Controllers\Controller;
 use \App\User;
 use Illuminate\Http\Request;
@@ -20,7 +19,7 @@ class dashBoardController extends Controller {
 	public function index(Request $request)
 	{
 	 $user= $this::getdetails($request);
-	 if ($user){
+         if ($user){
 	   echo $user['name'];
 	   return view('dashboardView')->with(['user'=>$user]);
 	 }
@@ -40,8 +39,9 @@ class dashBoardController extends Controller {
      $number = $user->Number;
      $bio = $user->bio;
      $image =$user->image;
-    
-    return ['name'=>$name, 'number'=>$number, 'bio'=>$bio, 'image'=>$image];
+     $isAdmin = $user->isAdmin;
+     $request->session()->put('isAdmin', $isAdmin);
+    return ['name'=>$name, 'number'=>$number, 'bio'=>$bio, 'image'=>$image, 'isAdmin'=>$isAdmin];
       
     }
   

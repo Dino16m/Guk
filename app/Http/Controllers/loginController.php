@@ -1,6 +1,6 @@
 <?php namespace App\Http\Controllers;
 
-use App\Http\Requests;
+
 use \App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -17,6 +17,7 @@ class loginController extends Controller {
    * @return view for the login page
    *
    */
+   //I need to set a cookie to identify each login instance
 	public function index(){
 	  if(auth::check()){
 	    echo auth::user()->email;
@@ -45,7 +46,7 @@ class loginController extends Controller {
 	 * @return Redirect
 	 * this method logs a user out and deletes all the sessions set for the user
 	 */
-	public function logout(Request $request){
+	public function logout(){
 	 if(auth::check()){
 	  auth::logout();
 	  \Session::flush();

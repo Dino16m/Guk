@@ -7,20 +7,37 @@
         <title></title>
     </head>
     <body>
-        <blockquote>
+        <link href="<?php echo url('css/decor.css')?>" rel="stylesheet" property>
+      
             <form action="<?php echo url('/login'); ?>" method="POST">
                 <input type="hidden" name="_token" value="<?php echo csrf_token() ?>">
-                <?php if (isset($errormsg)){
-                echo $errormsg.'<br>';
-                }?>
-                Email:   <input type ="email" name = "email"><br>
-                Password:<input type ="password" name="password"><br>
-                         <input type="submit" value="LOG IN"/> <br>
+               
+                <div class="form-login">
+                    <div class="container">
+                    <ul>
+                        <li>      
+                            <label for='email'>Email: </label>  
+                            <input type ="email" name = "email" id='email'>
+                        </li>
+                        <li>
+                            <label for='pwd'> Password: </label> 
+                            <input id ='pwd' type ="password" name="password"><br>
+                        </li>
+                   
+                         
+                        <li>  
+                            <input type="submit" value="log in" id='login'>
+                        </li>
+                    <li> <a href="<?php echo url('resetPassword')?>"> <b>Reset Password</b></a></li>
+                    </ul>
+                    </div>
+                 
+        </div>
             </form>
             
-        </blockquote>
-        <div id= 'passwordreset'>
-            <form> <button formaction="<?php echo url('/password/email'); ?>"> reset password </button></form>
-        </div>
+        
+       
+        <script type="text/javascript" src="<?php echo url('js/app.js') ?>"> </script>
+       
     </body>
 </html>

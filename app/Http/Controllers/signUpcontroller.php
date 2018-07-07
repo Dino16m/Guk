@@ -14,7 +14,10 @@ class signUpcontroller extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function index(Request $request)
+        public function index(){
+           return view('signUp'); 
+        }
+	public function signup(Request $request)
 	{
 	if ($request->input('tname') and $request->input('email') !=null){
 	  if($request->input('password') and  $request->input('password1')!=null){
@@ -48,11 +51,7 @@ class signUpcontroller extends Controller {
 	        $errormsg='your data was not added to our system';
 	        return view('signUp', compact('errormsg'));
 	       }
-	         $credentials =['email'=>$email, 'password'=>$request->input('password')];
-          if( $this::login($credentials)){
-            $request->session()->put('email', $email);
-            	return  redirect()->route('dashboard');
-                  	}
+	        
 	 }
   	else{return view('signUp')->with(['errormsg'=>'one or more of the fields are empty']);}
 	}
@@ -63,13 +62,9 @@ class signUpcontroller extends Controller {
 	 * @param Credentials of the user
 	 * this function logs a user in with the details they provide during their sogn up process
 	 */
-	private function login($credentials)
- {
-  if (auth::attempt($credentials)){
-	   echo auth::user()->email . 'shii';
-	   return true; }
-	 else return redirect()->action('loginController@index');
- }
+	
+ 
+  
  
   private function sanitize($input){
     $input= trim($input);

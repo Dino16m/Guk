@@ -19,6 +19,11 @@
 
                    <li>   <form><button formaction="<?php echo url('/logout') ?>" id = 'logout' name= logout value= logout>logout</button></form> </li>
               </ul>
+            <?php if ($user['isAdmin']){
+                echo'<hr><form> <button formaction= "'.url('/adminPage').'" id= "adminPage"> admin page</button></form>';
+            }
+           
+            ?>
            </div>
     </body>
 </html>
