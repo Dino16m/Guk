@@ -1,0 +1,19 @@
+.avatar{
+ height:  50px;
+ width: 50px;
+ border-radius: 50%;
+}
+ul.user-opt> .user-drop{
+	margin-right: 50%;
+	text-align: left;
+}
+body, nav{
+	width: 100%;
+}
+.user-opt, .admin{}
+.logo{
+	margin-top: 0;
+	margin-left: 100%;
+	margin-right: 100%;
+	text-align: center; 
+}

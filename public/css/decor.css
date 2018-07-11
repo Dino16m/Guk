@@ -1,0 +1,67 @@
+li{
+    list-style-type: none;
+    display: block;
+    overflow: hidden;
+    left: 20%;
+    
+}
+ul{
+    float: left;
+}
+input{
+    width: 20em;
+    height: 10em;
+    display: block;
+    margin-bottom: .5em;
+    float: right;
+}
+label{
+    display: block;
+    text-align: right;
+    width: 5em;
+    float: left;
+    white-space: nowrap;
+    margin-right: .5em;
+    color: blue;
+}
+.form-login{
+    display: block;
+    width: 30em;
+    height: 30em;
+    position: relative;
+    overflow: hidden;
+    background-color: blanchedalmond;
+    align-self: center;
+    left: 30%;
+    right: 25%;
+    top: 10%;
+    
+}
+#login{
+    display: block;
+    width: 5em;
+    float: left;
+    
+}
+.container{
+    position: relative;
+    align-content: center;
+    width: 25em;
+    height: 20em;
+    background-color: whitesmoke;
+    display: box;
+    left: 8%;
+    right: 5%;
+    align-self: center;
+    top: 20%;
+}
+form{
+    display: block;
+    
+}
+a{
+   display: block;
+   float: right;
+   left: 100%;
+   align-self: flex-end;
+}

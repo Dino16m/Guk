@@ -1,0 +1,53 @@
+<!DOCTYPE html > 
+<html>
+<head>
+	<title> First Vue App</title>
+	<script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+<div id="app-2">
+	<p>
+		Ask a yes/no question:
+		<input v-model="question">
+	</p>
+	<p>
+		{{ answer }}
+	</p>
+</div>
+
+<script type="text/javascript">
+	
+	var que= new Vue({
+		el: '#app-2',
+		data: {
+			answer:'give a question to get an answer ',
+			question:''
+		},
+		watch: {
+			question: function(newQuestion, oldQuestion){
+				this.answer='waiting for you to stop typing...'
+				this.anAnswer()
+			}
+		},
+		created: function() {
+			 this.anAnswer();
+			},
+			methods: {
+				anAnswer: function(){
+					if(this.question.indexOf('?') === -1){
+						this.answer='questions usually have a question mark'
+
+						return
+					}
+					return this.answer='thinking.....'
+				}
+			
+			},
+
+
+		
+
+	})
+</script>
+</body>
+</html>

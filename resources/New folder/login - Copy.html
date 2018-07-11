@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login page</title>
+</head>
+<body>
+<div class="container">
+	<form>
+		<div class="formlogin">
+			<ul>
+				<li>
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email">
+				</li>
+				<li>
+					<label for="password"> Password</label>
+					<input type="password" name="password" id= password>
+				</li>
+				<li>
+					<input type="submit" id="submit" >
+				</li>
+				<li > 
+					<input type="checkbox" name="remember" value="true" checked ><label id="rmb" for="rmb"> Remeber me </label>
+					<li>
+				<li>
+					<a href="#"><b>reset password</b></a>
+				</li>
+				
+
+			</ul>
+
+		</div>
+	</form>
+</div>
+
+
+
+
+<script type="text/javascript">
+	
+</script>
+
+<style type="text/css">
+	img{
+		width: 40%;
+	
+		display: block;
+		border-radius: 50%;
+		align-content: center;
+		border: 1px solid black;
+		margin:  0 auto;
+		
+
+
+	}
+	body{
+		background-image: url(14242.jpg);
+	}
+	.imgCon, #imgCon{
+		display: none;
+		width: 60%;
+		height: 60%;
+		max-height: 500px;
+		border: 2px solid black;
+		text-align: center;
+		background-color: orange;
+		z-index: 1;
+		position: fixed;
+		left: 20%;
+		top: 0;
+	}
+
+	#rmb{
+		display: inline-block;
+		clear:all;
+		float: left;
+		width: 10em;
+		text-align: left;
+		height: 1.5em;
+	}
+	input[type="checkbox"]{
+		display: inline-block;
+		float:left;
+		width: 1em;
+		height: 1.5em;
+		text-align: left;
+	}
+
+
+	li{
+		list-style-type: none;
+
+
+	}
+	a{
+		text-decoration: none;
+		display: inline-block;
+		text-align: right;
+	}
+	.container{
+		align-content: center;
+		width: 500px;
+		height: 20em;
+		background-color:#808000 ;
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+
+		
+
+
+	}
+	.formlogin{
+		text-align: left;
+		width: 90%;
+		height:15em ;
+		background-color: #e6e6fa;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5em;
+		padding-top: 3em;
+
+	}
+	label{
+		display: block;
+		text-align: right;
+		float: left;
+		width: 20%;
+		margin-right: .5em;
+		margin-left: auto;
+		color: blue;
+
+	}
+	input{
+		display: inline-block;
+		width: 70%;
+		height: 2em;
+		margin-bottom: .5em;
+
+	}
+	#submit{
+		display: block;
+		width: 71%;
+		clear: all;
+		margin-top: 5%;
+		margin-left: 22%;
+		background-color: #008080;
+		color: black;
+
+	}
+	#submit:hover, #submit:focus, input:hover, input:focus{
+		background-color: #fffaf0;
+		border: 1px solid #000000;
+	}
+	a{
+		text-decoration: none;
+		display: inline-block;
+		text-align: left;
+		float: left;
+	}
+
+	
+@media screen and ( max-width: 550px ){
+
+		body{
+			overflow: none;
+		}
+		.container{
+		align-content: center;
+		width: 360px;
+		height: 20em;
+		background-color: #808000;
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	label{
+		display: block;
+		text-align: left;
+		float: left;
+		width: 100%;
+		margin-bottom: .3em;
+		color: blue;
+
+	}
+	input{
+		display: block;
+		width: 90%;
+		height: 2em;
+		margin-bottom: .5em;
+		border: 1px solid black;
+
+	}
+
+#submit{
+		display: block;
+		width: 71%;
+		clear: all;
+		margin-top: 5%;
+		margin-left: 11%;
+		margin-right: 11%;
+		background-color: #008080;
+		color: black;
+
+	}
+	}
+</style>
+</body>
+</html>

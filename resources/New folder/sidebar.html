@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>side bar</title>
+</head>
+<body>
+<div id="sidebar">
+	<div class="toggle" onclick="togglebtn()">
+		<span>1</span>
+		<span></span>
+		<span></span>
+	</div>
+	<ul>
+		<li>home</li>
+		<li>contact</li>
+		<li>about us</li>
+	</ul>
+
+</div>
+
+</body>
+<style type="text/css">
+	*{
+		margin: 0px;
+		padding:0px;
+	}
+	#sidebar{
+		position: fixed;
+		width: 200px;
+		height: 100%;
+		left: -200px;
+		top: 0;
+		transition: all 500ms ease-out;
+		background-color: black;
+	}
+	#sidebar.active{
+		left: 0;
+	}
+	#sidebar .toggle{
+		position: absolute;
+		left: 230px;
+		top: 20px;
+	}
+	#sidebar .toggle span{
+		display: block;
+		width: 20px;
+		height: 5px;
+		margin-top: 2px;
+		margin-bottom: 3px;
+		background-color: black;
+
+	}
+	#sidebar ul li{
+		display: block;
+		width: 200px;
+		height: 30px;
+		border-bottom: 1px solid white;
+		color: white;
+		margin-bottom: 2px;
+		margin-top: 1px;
+		margin-left: 10px;
+		list-style: none;
+		padding: 15px 10px;
+	}
+</style>
+<script type="text/javascript">
+	function togglebtn(){
+		document.getElementById('sidebar').classList.toggle('active');
+	}
+</script>
+</html>

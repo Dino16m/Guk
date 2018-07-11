@@ -7,7 +7,6 @@
         <title></title>
     </head>
     <body>
-        <link href="<?php echo url('css/decor.css')?>" rel="stylesheet" property>
       
             <form action="<?php echo url('/login'); ?>" method="POST">
                 <input type="hidden" name="_token" value="<?php echo csrf_token() ?>">

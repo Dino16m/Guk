@@ -14,7 +14,14 @@
 Route::get('/', function(){
     return view('welcome');
 });
-
+Route::get('/addcomment', 'commentController@addCommentView');
+Route::post('/addcomment', 'commentController@addComment');
+Route::get('/getcomment/{postId}', 'commentController@getComments');
+Route::post('/addreply', 'commentController@addReply');
+Route::get('/post/{uri?}','postController@getPost');
+Route::get('posts','postController@index');
+Route::get('addposts', ['as'=>'addposts','middleware'=>'auth','uses'=> 'postController@addPostIndex']);
+Route::post('addposts' ,['as'=>'addposts','middleware'=>'auth','uses'=> 'postController@addPost']);
 Route::get('home', 'HomeController@index');
 Route::get('signUp',['as'=>'signUp', 'middleware'=>'isAdmin', 'uses'=>'signUpcontroller@index']);
 Route::post('signUp',['as'=> 'signUp','middleware'=>'isAdmin','uses' => 'signUpcontroller@signup']);

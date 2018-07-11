@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+<head>
+	<title></title>
+</head>
+<body>
+<ul id="ls">
+
+<li><a href="" class="smooth">awesomesauce</a></li>
+<li><a href=""> 2nd member</a></li>
+<li><a href=""> 3rd member</a></li>
+<li><a href=""> 4th member</a></li>
+</ul>
+<button id="button">press here</button>
+
+
+
+<form class="in" method="">
+	<ul>
+	<li> 
+		<label for="first-name">Firstname: </label>
+		<input type="text" id="first-name">
+	</li>
+	<li>
+		<label for="last-name">Lastname: </label>
+		<input type="text" id="last-name">
+	</li>
+	<li>
+		<label for="email">Email:</label>
+		<input type="email" id="email">
+    </li>
+	<li>
+		<label for="password1">Password: </label>
+		<input type="password" id="password1">
+	</li>
+	<li>
+		<label for="password2">Confirm Password: </label>
+		<input type="password" id="password2">
+	</li>
+	</ul>
+</form>
+</body>
+<style type="text/css">
+	li{
+		float: left;
+		list-style-type: none;
+		white-space: all;
+
+	}
+	form{
+		overflow: hidden;
+		width:60%;
+	}
+	form ul li{
+		float: none;
+		display: block;
+		clear: both;
+
+	}
+	label{
+		display: block;
+		text-align: left;
+		color: blue;
+		float: left;
+		width: 10em;
+		margin-right: .5em;
+		font-family: serif;
+	}
+	input{
+		display: block;
+		width: 15em;
+		height: 1.5em;
+		float: none;
+		margin-bottom: .1em;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: .875em
+
+	}
+
+	button#button{
+		width: 50px;
+		height: 50px;
+		background-color:;
+		
+	}
+	button:hover{
+		transform: scale(2);
+		background-color: pink;
+
+	}
+	input:hover{
+		
+	}
+	input:active{
+		border-color: orange;
+	}
+	a{
+
+		text-decoration: none;
+		border-spacing: 4px;
+		margin-right: 4px;
+		position: relative;
+		background-color: orange;
+		border-color: red;
+		display: block;
+		padding: .5em .5em;
+		border-radius: 8px;
+		box-shadow: .2em .2em silver;
+		transition: background-color 1.0s ease-out;
+	}
+	a:hover, a:focus{
+			background-color: gold;
+			border-color: none;
+			top: 3px;
+			transform: translate(15px, 10px);
+			transform: skew();
+	}
+			
+</style>
+</html>
