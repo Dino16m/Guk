@@ -14,6 +14,7 @@
 Route::get('/', function(){
     return view('welcome');
 });
+Route::get('/getreplies/{parentId}', 'commentController@getReplies');
 Route::get('/addcomment', 'commentController@addCommentView');
 Route::post('/addcomment', 'commentController@addComment');
 Route::get('/getcomment/{postId}', 'commentController@getComments');

@@ -160,7 +160,7 @@ class dashBoardController extends Controller {
   }
   /***
    *this checks if the image is of the required/supported type
-   * futre types that will be supported can be added with a case
+   * future types that will be supported can be added with a case statement
    *@return boolean
    *
    */
